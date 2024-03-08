@@ -13,6 +13,8 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Devices
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
@@ -41,6 +43,7 @@ fun HomeScreen(navController: NavHostController) {
         HomeItem(title = "Task1", onItemClick = { navController.navigate("task1") }),
         HomeItem(title = "Task2", onItemClick = { navController.navigate("task2") }),
         HomeItem(title = "Task3", onItemClick = { navController.navigate("task3") }),
+        HomeItem(title = "Task4", onItemClick = { navController.navigate("task4") }),
     )
 
 
@@ -52,11 +55,11 @@ fun HomeScreen(navController: NavHostController) {
             Text(
                 text = it.title,
                 modifier = Modifier
-                .fillMaxWidth()
-                .clickable {
-                    it.onItemClick.invoke()
-                }
-                .padding(vertical = 6.dp))
+                    .fillMaxWidth()
+                    .clickable {
+                        it.onItemClick.invoke()
+                    }
+                    .padding(vertical = 6.dp))
             HorizontalDivider()
         }
 

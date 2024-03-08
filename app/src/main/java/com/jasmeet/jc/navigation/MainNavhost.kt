@@ -8,6 +8,7 @@ import com.jasmeet.jc.HomeScreen
 import com.jasmeet.jc.tasks.Task1
 import com.jasmeet.jc.tasks.Task2
 import com.jasmeet.jc.tasks.Task3
+import com.jasmeet.jc.tasks.Task4
 
 @Composable
 fun MainNavHost(nav: NavHostController) {
@@ -25,7 +26,9 @@ fun MainNavHost(nav: NavHostController) {
         }
         composable("task3"){
             Task3()
-
+        }
+        composable("task4"){
+            Task4()
         }
     }
 }
