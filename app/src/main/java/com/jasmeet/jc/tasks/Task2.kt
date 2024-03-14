@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 
 /**
  * Task 2 is to center align the text in a Column
@@ -41,7 +42,13 @@ fun Task2() {
 }
 
 
-fun showToast(context: Context){
+fun showToast(context: Context,text :String? = null){
     Toast.makeText(context, "Login Clicked", Toast.LENGTH_SHORT).show()
+}
+
+@Preview
+@Composable
+private fun Task2Preview() {
+    Task2()
 }
 

@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import com.jasmeet.jc.R
 
 @Composable
@@ -35,4 +36,10 @@ fun Task3() {
 
     }
 
+}
+
+@Preview
+@Composable
+private fun Task3Preview() {
+    Task3()
 }

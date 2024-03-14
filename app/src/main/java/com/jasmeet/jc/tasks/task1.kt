@@ -2,6 +2,7 @@ package com.jasmeet.jc.tasks
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 
 
 /**
@@ -13,4 +14,11 @@ fun Task1() {
         text = "Hello World !",
 
     )
+}
+
+@Preview
+@Composable
+private fun Task1Preview() {
+
+    Task1()
 }
