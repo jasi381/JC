@@ -46,6 +46,9 @@ fun HomeScreen(navController: NavHostController) {
         HomeItem(title = "Task4", onItemClick = { navController.navigate("task4") }),
         HomeItem(title = "Task5", onItemClick = { navController.navigate("task5") }),
         HomeItem(title = "Task6", onItemClick = { navController.navigate("task6") }),
+        HomeItem(title = "Task7", onItemClick = { navController.navigate("task7") }),
+        HomeItem(title = "Task8", onItemClick = { navController.navigate("task8") }),
+        HomeItem(title = "Task9", onItemClick = { navController.navigate("task9") }),
     )
 
 

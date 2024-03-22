@@ -43,7 +43,7 @@ fun Task2() {
 
 
 fun showToast(context: Context,text :String? = null){
-    Toast.makeText(context, "Login Clicked", Toast.LENGTH_SHORT).show()
+    Toast.makeText(context, text ?:"Login Clicked", Toast.LENGTH_SHORT).show()
 }
 
 @Preview
